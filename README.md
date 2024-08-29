@@ -22,7 +22,7 @@ By maintaining this repository, I aim to:
 - Share my solutions with the community.
 - Offer a resource for others preparing for interviews or improving their coding skills.
 
-If you're looking for in-depth explanations and a detailed breakdown of each problem, please visit my [Medium profile](https://medium.com/@yourprofile) where I dive deep into the approaches and thought processes behind these solutions.
+If you're looking for in-depth explanations and a detailed breakdown of each problem, please visit my [Medium profile](https://medium.com/@subhanamjad507) where I dive deep into the approaches and thought processes behind these solutions.
 
 ## 🌟 Stay Connected
 
