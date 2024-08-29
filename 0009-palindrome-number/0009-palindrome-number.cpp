@@ -6,15 +6,12 @@ public:
             return false;
         }
         
-        int original = x;
-        int reversed = 0;
+        long long int original = x;
+        long long int reversed = 0;
 
         while (x > 0) {
             int digit = x % 10;   
-            // Check if reversing would cause overflow
-            if (reversed > (INT_MAX - digit) / 10) {
-                return false;
-            }
+            
             reversed = reversed * 10 + digit; 
             x /= 10;                    
         }
