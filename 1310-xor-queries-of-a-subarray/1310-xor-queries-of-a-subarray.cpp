@@ -1,19 +1,21 @@
 class Solution {
 public:
     vector<int> xorQueries(vector<int>& arr, vector<vector<int>>& queries) {
-        int n = arr.size();
-        vector<int> prefixXOR(n + 1, 0);
+        vector<int> output;
 
-        // Build prefix XOR array
-        for (int i = 0; i < n; i++) {
-            prefixXOR[i + 1] = prefixXOR[i] ^ arr[i];
+        
+        for (int i = 0; i < queries.size(); i++) {
+            int left = queries[i][0];
+            int right = queries[i][1];
+
+            int result = 0;
+            
+            for (int j = left; j <= right; j++) {
+                result ^= arr[j]; 
+            }
+            output.push_back(result); 
         }
 
-        vector<int> result;
-        // Process each query using prefix XOR
-        for (const auto& q : queries) {
-            result.push_back(prefixXOR[q[1] + 1] ^ prefixXOR[q[0]]);
-        }
-        return result;
+        return output;
     }
 };
